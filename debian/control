@@ -1,0 +1,13 @@
+Source: ros-humble-python-qt-binding
+Section: misc
+Priority: optional
+Maintainer: Shane Loretz <sloretz@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), libpyside2-dev, libshiboken2-dev, pyqt5-dev, python3-pyqt5, python3-pyqt5.qtsvg, python3-pyside2.qtsvg, python3-sip-dev, qtbase5-dev, ros-humble-ament-cmake, ros-humble-ament-cmake-pytest <!nocheck>, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, shiboken2, ros-humble-ros-workspace
+Homepage: http://ros.org/wiki/python_qt_binding
+Standards-Version: 3.9.2
+
+Package: ros-humble-python-qt-binding
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpyside2-dev, libshiboken2-dev, pyqt5-dev, python3-pyqt5, python3-pyqt5.qtsvg, python3-pyside2.qtsvg, python3-sip-dev, qtbase5-dev, shiboken2, ros-humble-ros-workspace
+Description: This stack provides Python bindings for Qt.
+ There are two providers: pyside and pyqt. PySide2 is available under the GPL, LGPL and a commercial license. PyQt is released under the GPL. Both the bindings and tools to build bindings are included from each available provider. For PySide, it is called &quot;Shiboken&quot;. For PyQt, this is called &quot;SIP&quot;. Also provided is adapter code to make the user's Python code independent of which binding provider was actually used which makes it very easy to switch between these.
